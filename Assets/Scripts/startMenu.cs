@@ -10,8 +10,9 @@ public class startMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startMenuUI.SetActive(true);
         
+        startMenuUI.SetActive(true);
+
     }
 
     // Update is called once per frame
