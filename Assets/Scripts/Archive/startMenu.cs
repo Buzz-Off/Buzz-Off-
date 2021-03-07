@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class startMenu : MonoBehaviour
 {
     public Button startButton;
+   // public Button instructionsButton;
     public GameObject startMenuUI;
+    //public bool instructions = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
         startMenuUI.SetActive(true);
-
     }
 
     // Update is called once per frame
@@ -20,17 +21,24 @@ public class startMenu : MonoBehaviour
     {
         Button startBtn = startButton.GetComponent<Button>();
         startBtn.onClick.AddListener(startBtnClick);
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            startMenuUI.SetActive(false);
-        }
-
+        /*
+        Button instructionsBtn = instructionsButton.GetComponent<Button>();
+        instructionsBtn.onClick.AddListener(instructionsBtnClick);
+        */
     }
 
+    // If the start button gets clicked, start the game
     void startBtnClick()
     {
         startMenuUI.SetActive(false);
     }
-
+    /*
+    // If the instructions button gets clicked, switch to other panel
+    void instructionsBtnClick()
+    {
+        
+        instructions = true;
+        //startMenuUI.SetActive(false);
+    }
+    */
 }
