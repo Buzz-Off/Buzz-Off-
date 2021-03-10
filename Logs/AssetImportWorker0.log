@@ -448,3 +448,4 @@ Received Import Request.
 Start importing Assets/Models/Office/ModernOffice_Interior/Materials/UnusedFaces_snaps001.mat using Guid(3cb8172b4f393944295e6584397f2219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3300777e7f737ad855dcb7c75e7408f7') in 0.074531 seconds
   Import took 0.112569 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
