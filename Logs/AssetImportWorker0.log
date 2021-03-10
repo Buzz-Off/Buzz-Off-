@@ -152,3 +152,4 @@ Received Import Request.
 Start importing Assets/Models/Office/ModernOffice_Interior/Materials/BrownLight_snaps001.mat using Guid(9dd3f5b3049028f4e948921f3bf87f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba7ec36ce1ffd6dc581b64a156b340c') in 0.033648 seconds
   Import took 0.039287 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
