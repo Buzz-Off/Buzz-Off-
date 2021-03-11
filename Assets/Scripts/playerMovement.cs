@@ -5,8 +5,9 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     
-    public float speed = 6f;
-    public float rotateSpeed = 10f;
+    public float xy_speed;
+    public float z_speed;
+    public float rotateSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -22,31 +23,31 @@ public class playerMovement : MonoBehaviour
 
        if (Input.GetKey(KeyCode.W))
         {
-            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f * speed, transform.position.z);
-            gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(-30, transform.rotation.y, transform.rotation.z), rotateSpeed * Time.deltaTime);
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f * xy_speed, transform.position.z);
+            gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(-40, transform.rotation.y, transform.rotation.z), rotateSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - 0.01f * speed, transform.position.z);
-            gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(30, transform.rotation.y, transform.rotation.z), rotateSpeed * Time.deltaTime);
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - 0.01f * xy_speed, transform.position.z);
+            gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(40, transform.rotation.y, transform.rotation.z), rotateSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.position = new Vector3(transform.position.x - 0.01f * speed, transform.position.y, transform.position.z);
-            gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(transform.rotation.x, transform.rotation.y, 30), rotateSpeed * Time.deltaTime);
+            gameObject.transform.position = new Vector3(transform.position.x - 0.01f * xy_speed, transform.position.y, transform.position.z);
+            gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(transform.rotation.x, -40, transform.rotation.z), rotateSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.position = new Vector3(transform.position.x + 0.01f * speed, transform.position.y, transform.position.z);
-            gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(transform.rotation.x, transform.rotation.y, -30), rotateSpeed * Time.deltaTime);
+            gameObject.transform.position = new Vector3(transform.position.x + 0.01f * xy_speed, transform.position.y, transform.position.z);
+            gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(transform.rotation.x, 40, transform.rotation.z), rotateSpeed * Time.deltaTime);
         }
         if (Input.GetMouseButton(0))
         {
-            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.01f * speed);
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.01f * z_speed);
         }
         if (Input.GetMouseButton(1))
         {
-            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.01f * speed);
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.01f * z_speed);
         }
       
 
