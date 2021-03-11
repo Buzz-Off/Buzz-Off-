@@ -20,36 +20,38 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 direction = new Vector3(0, 0, 0);
 
        if (Input.GetKey(KeyCode.W))
         {
-            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f * xy_speed, transform.position.z);
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f * xy_speed * Time.deltaTime, transform.position.z);
             gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(-40, transform.rotation.y, transform.rotation.z), rotateSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - 0.01f * xy_speed, transform.position.z);
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - 0.01f * xy_speed * Time.deltaTime, transform.position.z);
             gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(40, transform.rotation.y, transform.rotation.z), rotateSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.position = new Vector3(transform.position.x - 0.01f * xy_speed, transform.position.y, transform.position.z);
+            direction = direction + Vector3.left * 0.01f * xy_speed * Time.deltaTime;
             gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(transform.rotation.x, -40, transform.rotation.z), rotateSpeed * Time.deltaTime);
+            
         }
         if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.position = new Vector3(transform.position.x + 0.01f * xy_speed, transform.position.y, transform.position.z);
+            gameObject.transform.position = new Vector3(transform.position.x + 0.01f * xy_speed * Time.deltaTime, transform.position.y, transform.position.z);
             gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(transform.rotation.x, 40, transform.rotation.z), rotateSpeed * Time.deltaTime);
         }
         if (Input.GetMouseButton(0))
         {
-            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.01f * z_speed);
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.01f * z_speed * Time.deltaTime);
         }
         if (Input.GetMouseButton(1))
         {
-            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.01f * z_speed);
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.01f * z_speed * Time.deltaTime);
         }
-      
 
+        gameObject.transform.position += direction; //force
     }
 }
