@@ -21,7 +21,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
-        GetComponent<NavMeshAgent>().SetDestination(waypoints[currentWaypointID].position);
+        //GetComponent<NavMeshAgent>().SetDestination(waypoints[currentWaypointID].position);
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.SetDestination(waypoints[currentWaypointID].position);
     }
@@ -35,6 +35,7 @@ public class EnemyAI : MonoBehaviour
                 if (navMeshAgent.remainingDistance < 0.04f)
                 {
                     currentWaypointID = (currentWaypointID + 1) % waypoints.Length;
+                    navMeshAgent.SetDestination(waypoints[currentWaypointID].position);
                 }
                 break;
             case EnemyState.Pursue:

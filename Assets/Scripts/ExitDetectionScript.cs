@@ -9,8 +9,7 @@ public class ExitDetectionScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // might have to change the name "fly" if doesn't work.
-        if (collision.gameObject.name == "fly")
+        if (collision.gameObject.name == "Player")
         {
             touchingExit = true;
             Debug.Log(touchingExit);
