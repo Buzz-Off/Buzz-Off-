@@ -24437,7 +24437,19 @@ Transform:
   - {fileID: 260539413}
   - {fileID: 1232005652}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+  m_RootOrder: 39
+=======
+  m_RootOrder: 36
+>>>>>>> Stashed changes
+=======
   m_RootOrder: 35
+>>>>>>> parent of 7c3b621 (added enemy and patrol script)
+=======
+  m_RootOrder: 39
+>>>>>>> parent of 6c930b7 (fly movement update)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1430213987
 MonoBehaviour:
