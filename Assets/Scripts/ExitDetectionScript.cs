@@ -14,7 +14,7 @@ public class ExitDetectionScript : MonoBehaviour
             touchingExit = true;
             Debug.Log(touchingExit);
             // change to exit menu.
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
     }
 }
