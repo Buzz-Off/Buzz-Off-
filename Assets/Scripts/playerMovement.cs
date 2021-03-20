@@ -45,12 +45,18 @@ public class playerMovement : MonoBehaviour
             direction = direction + Vector3.left;
             // gameObject.GetComponent<Rigidbody>().AddForce(direction * x_force * Time.deltaTime);
             gameObject.GetComponent<Rigidbody>().AddForce(-transform.right * x_force * Time.deltaTime);
+            //gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 100 * Time.deltaTime);
+            angularSpeed = new Vector3(0, -100, 0);
+            rb.MoveRotation(rb.rotation * rotation);
         }
         if (Input.GetKey(KeyCode.D))
         {
             direction = direction + Vector3.right;
             // gameObject.GetComponent<Rigidbody>().AddForce(direction * x_force * Time.deltaTime);
             gameObject.GetComponent<Rigidbody>().AddForce(transform.right * x_force * Time.deltaTime);
+            //gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 100 * Time.deltaTime);
+            angularSpeed = new Vector3(0, 100, 0);
+            rb.MoveRotation(rb.rotation * rotation);
         }
         if (Input.GetMouseButton(0))
         {
@@ -64,7 +70,7 @@ public class playerMovement : MonoBehaviour
             // gameObject.GetComponent<Rigidbody>().AddForce(direction * z_force * Time.deltaTime);
             gameObject.GetComponent<Rigidbody>().AddForce(-transform.forward * z_force * Time.deltaTime);
         }
-
+        /*
         if (Input.GetKey(KeyCode.Q))
         {
             angularSpeed = new Vector3(0, -50, 0);
@@ -77,7 +83,7 @@ public class playerMovement : MonoBehaviour
             rb.MoveRotation(rb.rotation * rotation);
 
         }
-
+        */
 
 
 
