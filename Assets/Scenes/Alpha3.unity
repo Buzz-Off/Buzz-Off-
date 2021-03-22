@@ -3152,6 +3152,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752125414}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &772109713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4434161370440623652, guid: 8f1f95c5d861e0a45aebdfc6dcdabac1, type: 3}
+  m_PrefabInstance: {fileID: 1179729127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &772109715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772109713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6ed5ce803e9ee4caa9128a76142bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchingExit: 0
 --- !u!1 &806578552
 GameObject:
   m_ObjectHideFlags: 0
@@ -5832,7 +5850,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4434161370440623657, guid: 8f1f95c5d861e0a45aebdfc6dcdabac1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8f1f95c5d861e0a45aebdfc6dcdabac1, type: 3}
 --- !u!1 &1186290800
 GameObject:
@@ -7655,8 +7674,8 @@ Rigidbody:
   m_GameObject: {fileID: 1441288009}
   serializedVersion: 2
   m_Mass: 0.5
-  m_Drag: 0.25
-  m_AngularDrag: 0.05
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
