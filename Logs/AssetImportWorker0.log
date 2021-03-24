@@ -864,3 +864,4 @@ Received Import Request.
 Start importing Assets/Models/Office/ModernOffice_Interior/Materials/Wall_1.mat using Guid(368951dd8376f4248b1c096764bcd968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e932ea0f27ebf2ec3aa39b89dc47bbad') in 0.069279 seconds
   Import took 0.078464 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
