@@ -7,11 +7,14 @@ public class playerMovement : MonoBehaviour
 
     public float x_force;
     public float y_force;
-    public float z_force;
+    public float z_force; 
 
 
     private Rigidbody rb;
     private Vector3 angularSpeed;
+
+    public bool inWind = false;
+    public GameObject windArea;
 
     // Start is called before the first frame update
     void Start()
@@ -70,32 +73,37 @@ public class playerMovement : MonoBehaviour
             // gameObject.GetComponent<Rigidbody>().AddForce(direction * z_force * Time.deltaTime);
             gameObject.GetComponent<Rigidbody>().AddForce(-transform.forward * z_force * Time.deltaTime);
         }
-        /*
-        if (Input.GetKey(KeyCode.Q))
+
+
+        if (inWind)
         {
-            angularSpeed = new Vector3(0, -50, 0);
-            rb.MoveRotation(rb.rotation * rotation);
-
+            rb.AddForce(Vector3.down * windArea.GetComponent<windForce>().strength);
         }
-        if (Input.GetKey(KeyCode.E))
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "wind")
         {
-            angularSpeed = new Vector3(0, 50, 0);
-            rb.MoveRotation(rb.rotation * rotation);
-
+            inWind = true;
+            windArea = other.gameObject;
         }
-        */
-
-
-
-
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "wind")
+        {
+            inWind = false;
+        }
     }
 }
 
+
+
+
 // Original Fly controls
 /* 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
