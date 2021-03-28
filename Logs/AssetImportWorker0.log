@@ -504,3 +504,4 @@ Received Import Request.
 Start importing Assets/Models/Office/ModernOffice_Interior/Prefabs/SNAPS_NoHD/Neo_Wall_Joint_4m_snaps001.prefab using Guid(e1b1bc960ce75964bbcbef5953f67ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b9b3bb60162c50fe40059c1876198e') in 0.016693 seconds
   Import took 0.021474 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
