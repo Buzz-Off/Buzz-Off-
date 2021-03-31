@@ -200,3 +200,4 @@ Received Import Request.
 Start importing Assets/Models/Office/ModernOffice_Interior/Prefabs/Structure/Floors_Ceilings/Neo_Floor_01_snaps001.prefab using Guid(238ac8785f3f5b947941aa4fd6e0ce86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '393243c2ee1f4d767798b5adafac39a5') in 0.025242 seconds
   Import took 0.031387 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
