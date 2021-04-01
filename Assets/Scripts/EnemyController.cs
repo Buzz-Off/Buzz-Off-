@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
     public GameObject fly;
     public GameObject LArm;
     public GameObject RArm;
+    public GameObject LTarget;
+    public GameObject RTarget;
 
     public float lookDistance;
     //public float attackDistance;
@@ -28,6 +30,7 @@ public class EnemyController : MonoBehaviour
             Vector3 direction = fly.transform.position - gameObject.transform.position;
             direction.y = 0;
             gameObject.transform.rotation = Quaternion.Slerp(gameObject.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+
             
         }
         
@@ -50,6 +53,10 @@ public class EnemyController : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("enter");
+
+
+            LTarget.transform.position = fly.transform.position;
+            RTarget.transform.position = fly.transform.position;
             attackClose();
         }
         
