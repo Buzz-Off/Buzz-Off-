@@ -8,42 +8,42 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ch22_body
-    second: {fileID: 2100000, guid: bf1161279eaf97044a38fce2b5cbcca6, type: 2}
+    second: {fileID: 2100000, guid: 7ecc292bc79bd3843b5175ff46fb7d7b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ch22_hair
-    second: {fileID: 2100000, guid: 62762085d8c548440a6c13777226b114, type: 2}
+    second: {fileID: 2100000, guid: 501901732941df94ca0dca92f706e061, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch22_1001_Diffuse
-    second: {fileID: 2800000, guid: 6f0419765b655bc42a9382b5a60d661e, type: 3}
+    second: {fileID: 2800000, guid: ae5dee6c949a83f40b7f2fb3dc178d26, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch22_1001_Glossiness
-    second: {fileID: 2800000, guid: fe1d6ecfe9f2b9744bbcb3eb5a49740f, type: 3}
+    second: {fileID: 2800000, guid: 712a70be0973f0c4197a7fcda62a18de, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch22_1001_Normal
-    second: {fileID: 2800000, guid: 4d6fc200e8cc9404fbd41317a7b3ccde, type: 3}
+    second: {fileID: 2800000, guid: 5bf9739e1c910024fb1e66a14da3eec5, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch22_1001_Specular
-    second: {fileID: 2800000, guid: aa7007d375cd95a4c8ab95ffa17ba44a, type: 3}
+    second: {fileID: 2800000, guid: ef777092d8fd43448a6fa6107564c1eb, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch22_1002_Diffuse
-    second: {fileID: 2800000, guid: 2004512a1b02b074f8f15a17bb617f6f, type: 3}
+    second: {fileID: 2800000, guid: 4d02b5b4b67042b4293ddc7581066263, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch22_1002_Normal
-    second: {fileID: 2800000, guid: 9da4a8727564794498a4db095ac011c6, type: 3}
+    second: {fileID: 2800000, guid: 9091d96e72cc46d42b5fc716ae453f17, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -55,8 +55,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: "Invalid copied Avatar Rig Configuration:\n\tNo human bone found.
-      Ensure both rig type match\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -127,9 +126,9 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: Bone001
+    rootMotionBoneName: mixamorig2:Hips
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
