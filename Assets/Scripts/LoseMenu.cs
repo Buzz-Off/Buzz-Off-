@@ -8,6 +8,11 @@ public class LoseMenu : MonoBehaviour
     // Lose menu is going to be at scene 3 (so we gotta -3 to go back to the start/play menu
     public void PlayAgain()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
+
+    public void LevelSelector()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
     }
 
