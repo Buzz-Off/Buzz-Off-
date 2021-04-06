@@ -8,6 +8,11 @@ public class WinGameScript : MonoBehaviour
     public void PlayAgain()
     {
         Debug.Log("HELLO");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void LevelSelector()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 6);
     }
 
