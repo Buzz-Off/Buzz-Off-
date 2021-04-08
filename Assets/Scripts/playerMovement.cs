@@ -19,9 +19,7 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         rb = GetComponent<Rigidbody>();
-
     }
 
 
@@ -31,55 +29,81 @@ public class playerMovement : MonoBehaviour
         Vector3 direction = new Vector3(0, 0, 0);
         Quaternion rotation = Quaternion.Euler(angularSpeed * Time.deltaTime);
 
+        // ---FOWARD---
         if (Input.GetKey(KeyCode.W))
         {
-            direction = direction + Vector3.up;
-            //gameObject.GetComponent<Rigidbody>().AddForce(direction * y_force * Time.deltaTime);
-            gameObject.GetComponent<Rigidbody>().AddForce(transform.up * y_force * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            direction = direction + Vector3.down;
-            //gameObject.GetComponent<Rigidbody>().AddForce(direction * y_force * Time.deltaTime);
-            gameObject.GetComponent<Rigidbody>().AddForce(-transform.up * y_force * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            direction = direction + Vector3.left;
-            // gameObject.GetComponent<Rigidbody>().AddForce(direction * x_force * Time.deltaTime);
-            gameObject.GetComponent<Rigidbody>().AddForce(-transform.right * x_force * Time.deltaTime);
-            //gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 100 * Time.deltaTime);
-            angularSpeed = new Vector3(0, -60, 0);
-            rb.MoveRotation(rb.rotation * rotation);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            direction = direction + Vector3.right;
-            // gameObject.GetComponent<Rigidbody>().AddForce(direction * x_force * Time.deltaTime);
-            gameObject.GetComponent<Rigidbody>().AddForce(transform.right * x_force * Time.deltaTime);
-            //gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 100 * Time.deltaTime);
-            angularSpeed = new Vector3(0, 60, 0);
-            rb.MoveRotation(rb.rotation * rotation);
-        }
-        if (Input.GetMouseButton(0))
-        {
             direction = direction + Vector3.forward;
-            // gameObject.GetComponent<Rigidbody>().AddForce(direction * z_force * Time.deltaTime);
             gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * z_force * Time.deltaTime);
         }
-        if (Input.GetMouseButton(1))
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            direction = direction + Vector3.forward;
+            gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * z_force * Time.deltaTime);
+        }
+
+        // ---BACKWARDS---
+        if (Input.GetKey(KeyCode.S))
         {
             direction = direction + Vector3.back;
-            // gameObject.GetComponent<Rigidbody>().AddForce(direction * z_force * Time.deltaTime);
+            gameObject.GetComponent<Rigidbody>().AddForce(-transform.forward * z_force * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            direction = direction + Vector3.back;
             gameObject.GetComponent<Rigidbody>().AddForce(-transform.forward * z_force * Time.deltaTime);
         }
 
+        // ---LEFT---
+        if (Input.GetKey(KeyCode.A))
+        {
+            direction = direction + Vector3.left;
+            gameObject.GetComponent<Rigidbody>().AddForce(-transform.right * 0.5f* x_force * Time.deltaTime);
+            angularSpeed = new Vector3(0, -60, 0);
+            rb.MoveRotation(rb.rotation * rotation);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            direction = direction + Vector3.left;
+            gameObject.GetComponent<Rigidbody>().AddForce(-transform.right * 0.5f* x_force * Time.deltaTime);
+            angularSpeed = new Vector3(0, -60, 0);
+            rb.MoveRotation(rb.rotation * rotation);
+        }
 
+        // ---RIGHT---
+        if (Input.GetKey(KeyCode.D))
+        {
+            direction = direction + Vector3.right;
+            gameObject.GetComponent<Rigidbody>().AddForce(transform.right * 0.5f* x_force * Time.deltaTime);
+            angularSpeed = new Vector3(0, 60, 0);
+            rb.MoveRotation(rb.rotation * rotation);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            direction = direction + Vector3.right;
+            gameObject.GetComponent<Rigidbody>().AddForce(transform.right * 0.5f* x_force * Time.deltaTime);
+            angularSpeed = new Vector3(0, 60, 0);
+            rb.MoveRotation(rb.rotation * rotation);
+        }
+
+        // ---UP---
+        if (Input.GetMouseButton(0))
+        {
+            direction = direction + Vector3.up;
+            gameObject.GetComponent<Rigidbody>().AddForce(transform.up * y_force * Time.deltaTime);
+        }
+
+        // ---DOWN---
+        if (Input.GetMouseButton(1))
+        {
+            direction = direction + Vector3.down;
+            gameObject.GetComponent<Rigidbody>().AddForce(-transform.up * y_force * Time.deltaTime);
+        }
+
+        // ---WIND---
         if (inWind)
         {
             rb.AddForce(Vector3.down * windArea.GetComponent<windForce>().strength);
         }
-        
     }
 
     private void OnTriggerEnter(Collider other)
