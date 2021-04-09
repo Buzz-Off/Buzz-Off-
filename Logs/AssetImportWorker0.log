@@ -1080,3 +1080,4 @@ Received Import Request.
 Start importing Assets/Models/Modular Sofa FREE/Materials/Sofa_d.mat using Guid(9c4161c075415ec4d8cc5c64bf923a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad5edac0586a3bc957895b091879fc2') in 0.126348 seconds
   Import took 0.132196 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
