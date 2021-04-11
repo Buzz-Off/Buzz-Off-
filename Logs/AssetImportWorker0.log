@@ -384,3 +384,4 @@ Received Import Request.
 Start importing Assets/Models/BarProps/Materials/WoodenSwivelStoolNoBack_001.mat using Guid(cadeb9496adae7d4fb44b2309aad0287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219cb03d04e0fa3d34c05c4748c55e4c') in 0.121730 seconds
   Import took 0.128801 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
