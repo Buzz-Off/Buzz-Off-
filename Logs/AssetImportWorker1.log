@@ -1,0 +1,142 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16269 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/darks/Buzz Off!
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50169
+Successfully changed project path to: C:/Users/darks/Buzz Off!
+C:/Users/darks/Buzz Off!
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 54.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/darks/Buzz Off!/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.6140
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002972 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 50.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.462 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010320 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.562 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.5 MB.
+System memory in use after: 102.5 MB.
+
+Unloading 148 unused Assets to reduce memory usage. Loaded Objects now: 2527.
+Total: 3.327200 ms (FindLiveObjects: 0.259100 ms CreateObjectMapping: 0.067400 ms MarkObjects: 2.704700 ms  DeleteObjects: 0.295200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefab/Girl1.prefab
+  artifactKey: Guid(5581b8fed7d7b51419db50b4fdc6f8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Girl1.prefab using Guid(5581b8fed7d7b51419db50b4fdc6f8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e789c88dfecbaff6451b8e839634ad54') in 0.559208 seconds
+  Import took 0.564115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Models
+  artifactKey: Guid(f79abf022db9de9429a1108e493dce1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(f79abf022db9de9429a1108e493dce1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24b68ceaf0423d3e0d1c09ce1dfd052') in 0.009158 seconds
+  Import took 0.012190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.564524 seconds.
+  path: Assets/Models/Sounds
+  artifactKey: Guid(2e45107081fc1de4b9f9a825b004dbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Sounds using Guid(2e45107081fc1de4b9f9a825b004dbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef6b15b2c0e0c241dc4540563f88eb2') in 0.008679 seconds
+  Import took 0.012079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.399923 seconds.
+  path: Assets/Models/Sounds/Fist Hit Palm 2 - Epidemic Sound.mp3
+  artifactKey: Guid(f0a88c8c91ac3c14eb497496addaba01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Sounds/Fist Hit Palm 2 - Epidemic Sound.mp3 using Guid(f0a88c8c91ac3c14eb497496addaba01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2e8c2bda606f4e87d1fce1fc2f94bc') in 0.132570 seconds
+  Import took 0.136621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 465.180164 seconds.
+  path: Assets/Models/Sounds/mixkit-large-fly-buzzing-41.wav
+  artifactKey: Guid(f1ff00eaf0244a742a74078da47c718a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Sounds/mixkit-large-fly-buzzing-41.wav using Guid(f1ff00eaf0244a742a74078da47c718a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc20e1ac9e04fdd7abdf1af4597371c0') in 0.025869 seconds
+  Import took 0.029804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Models/Sounds/mixkit-on-or-off-light-switch-tap-2585.wav
+  artifactKey: Guid(e8e3e6a12318a574fba65714c93d60b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Sounds/mixkit-on-or-off-light-switch-tap-2585.wav using Guid(e8e3e6a12318a574fba65714c93d60b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e4ce6516541200f8dde492e624b905') in 0.055192 seconds
+  Import took 0.058679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Models/Sounds/mixkit-retro-game-notification-212.wav
+  artifactKey: Guid(1f4afe573fe61bf4a95daf1dd2f06552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Sounds/mixkit-retro-game-notification-212.wav using Guid(1f4afe573fe61bf4a95daf1dd2f06552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33855b81b99d5a9ae673357260a1c52') in 0.018343 seconds
+  Import took 0.021599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Models/Sounds/mixkit-large-fly-buzzing-41.wav
+  artifactKey: Guid(f1ff00eaf0244a742a74078da47c718a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Sounds/mixkit-large-fly-buzzing-41.wav using Guid(f1ff00eaf0244a742a74078da47c718a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc20e1ac9e04fdd7abdf1af4597371c0') in 0.039178 seconds
+  Import took 0.042373 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
