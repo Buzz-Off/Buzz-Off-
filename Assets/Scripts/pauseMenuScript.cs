@@ -54,6 +54,6 @@ public class pauseMenuScript : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
         // for unity editor
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 }
