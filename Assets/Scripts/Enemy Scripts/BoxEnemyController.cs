@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewEnemyController : MonoBehaviour
+public class BoxEnemyController : MonoBehaviour
 {
     public GameObject fly;
+    public float speed;
 
-    public float lookDistance;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +33,16 @@ public class NewEnemyController : MonoBehaviour
         }*/
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
 
 
 
 
-    
+
+
 
 
 

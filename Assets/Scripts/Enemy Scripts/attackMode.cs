@@ -11,13 +11,11 @@ public class attackMode : MonoBehaviour
     public GameObject LTarget;
     public GameObject RTarget;
     public float attackSpeed;
-    public float timer;
-
-    public float test;
 
     private bool isAttack;
-    private bool isAttackClosed = false;
-
+    private bool attackInwards;
+    public float closeDelay;
+    public float openDelay;
 
 
     // Start is called before the first frame update
@@ -52,29 +50,27 @@ public class attackMode : MonoBehaviour
 
             timer = 0;
         }*/
-        
+
+        if (LHand.GetComponent<TwoBoneIKConstraint>().weight <= 0 && RHand.GetComponent<TwoBoneIKConstraint>().weight <= 0)
+        {
+            Invoke("closeHandsDelay", closeDelay);
+        }
+        else if (LHand.GetComponent<TwoBoneIKConstraint>().weight >= 1 && RHand.GetComponent<TwoBoneIKConstraint>().weight >= 1)
+        {
+            Invoke("openHandsDelay", openDelay);
+        }
+
+
         if (isAttack)
         {
-            //isAttackClosed = false;
-            while (LHand.GetComponent<TwoBoneIKConstraint>().weight < 1 && RHand.GetComponent<TwoBoneIKConstraint>().weight < 1)
+            if (attackInwards)
             {
                 attackClose();
             }
-            //isAttackClosed = true;
-            while (LHand.GetComponent<TwoBoneIKConstraint>().weight > 0 && RHand.GetComponent<TwoBoneIKConstraint>().weight > 0)
+            if (!attackInwards)
             {
                 attackOpen();
             }
-            
-
-            
-
-            /*if (LHand.GetComponent<TwoBoneIKConstraint>().weight >= 1 && RHand.GetComponent<TwoBoneIKConstraint>().weight >= 1)
-            {
-                isAttack2 = true;
-                Debug.Log(isAttack2);
-            }*/
-
 
         }
         else if (!isAttack)
@@ -82,18 +78,16 @@ public class attackMode : MonoBehaviour
             attackOpen();
         }
 
-        /*if (isAttack2)
-        {
-            Debug.Log("help");
-            timer += Time.deltaTime;
-            if (timer > 5)
-            {
-                LHand.GetComponent<TwoBoneIKConstraint>().weight -= attackSpeed * Time.deltaTime;
-                RHand.GetComponent<TwoBoneIKConstraint>().weight -= attackSpeed * Time.deltaTime;
 
-            }
-            timer = 0;
-        }*/
+    }
+
+    private void openHandsDelay()
+    {
+        attackInwards = false;
+    }
+    private void closeHandsDelay()
+    {
+        attackInwards = true;
     }
 
     private void attackOpen()
