@@ -1,42 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class BoxEnemyController : MonoBehaviour
 {
     public GameObject fly;
     public float speed;
+    public float timer;
 
+    private bool isChasing;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        isChasing = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if (Vector3.Distance(fly.transform.position, gameObject.transform.position) < lookDistance)
+        if (isChasing)
         {
-            gameObject.GetComponent<Animator>().SetBool("isReady", true);
-
             Vector3 direction = fly.transform.position - gameObject.transform.position;
             direction.y = 0;
-            gameObject.transform.rotation = Quaternion.Slerp(gameObject.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
 
-            Debug.Log("ready");
+            timer += Time.deltaTime;
+            if (timer < 10)
+            {
+
+                gameObject.transform.rotation = Quaternion.Slerp(gameObject.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+                gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, fly.transform.position, speed * Time.deltaTime);
+
+            }
         }
-        else
-        {
-            gameObject.GetComponent<Animator>().SetBool("isReady", false);
-        }*/
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.tag == "Player")
+        {
+            isChasing = true;
+            Debug.Log(isChasing);
+        }
     }
+
 
 
 
