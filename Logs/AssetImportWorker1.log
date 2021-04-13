@@ -104,3 +104,4 @@ Received Import Request.
 Start importing Assets/Models/Office/ModernOffice_Interior/Materials/LightGray_snaps001.mat using Guid(ae2efeea9c901af48b6bb19d9981d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920c04c46f8322005c7c5b034a8200a6') in 0.037253 seconds
   Import took 0.052214 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
