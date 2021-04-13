@@ -1,0 +1,190 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16269 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/darks/Buzz Off!
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63785
+Successfully changed project path to: C:/Users/darks/Buzz Off!
+C:/Users/darks/Buzz Off!
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 58.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/darks/Buzz Off!/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.6140
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002972 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 59.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.477 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010238 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.846 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.1 MB.
+System memory in use after: 103.1 MB.
+
+Unloading 148 unused Assets to reduce memory usage. Loaded Objects now: 2533.
+Total: 3.712900 ms (FindLiveObjects: 0.258600 ms CreateObjectMapping: 0.079800 ms MarkObjects: 3.019800 ms  DeleteObjects: 0.353600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Alpha1.unity
+  artifactKey: Guid(71619cca3eb02144f8311ae0059a2db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Alpha1.unity using Guid(71619cca3eb02144f8311ae0059a2db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8643f9c553820adcec59d50404d6e2f8') in 0.015753 seconds
+  Import took 0.072124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 322.778240 seconds.
+  path: Assets/Scenes/Alpha2.unity
+  artifactKey: Guid(d1659f74486e75f479ca72198d4c25ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Alpha2.unity using Guid(d1659f74486e75f479ca72198d4c25ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f46a5d6a4ea471866b074d124fd9cc') in 0.003238 seconds
+  Import took 0.006873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 651.450630 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/OldSchoolBarstoolBacked.dae
+  artifactKey: Guid(1b743ccd38691d542850f73f43bef3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/OldSchoolBarstoolBacked.dae using Guid(1b743ccd38691d542850f73f43bef3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a936b083e567c5b4f3ddf08321c1e447') in 0.443113 seconds
+  Import took 0.447801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/TallSquareTable.dae
+  artifactKey: Guid(61cdc424adb3dac4489b3fcb4ee253a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/TallSquareTable.dae using Guid(61cdc424adb3dac4489b3fcb4ee253a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d7e080505ee139fdd33433fd93600f') in 0.088426 seconds
+  Import took 0.092039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/WoodenSwivelStoolNoBack.dae
+  artifactKey: Guid(71d9f81915b42544fadc600329c27b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/WoodenSwivelStoolNoBack.dae using Guid(71d9f81915b42544fadc600329c27b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0576a1ed8a868d36bdd2c576bc370f') in 0.102974 seconds
+  Import took 0.106315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/SquareTable.dae
+  artifactKey: Guid(60e892bc26a066649ab14df704128623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/SquareTable.dae using Guid(60e892bc26a066649ab14df704128623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974da46942d0b9bb1c9d827af575f883') in 0.031912 seconds
+  Import took 0.060042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/TallRoundTable.dae
+  artifactKey: Guid(63fca6f7605661246ba17828e535919e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/TallRoundTable.dae using Guid(63fca6f7605661246ba17828e535919e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0709c243f4d99a57a456eca45d78556') in 0.069528 seconds
+  Import took 0.072995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/RoundTable.dae
+  artifactKey: Guid(2a4091fd6acfbeb468005c5cf0e37038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/RoundTable.dae using Guid(2a4091fd6acfbeb468005c5cf0e37038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33aeb391e75c85f55f6f91377174602') in 0.024625 seconds
+  Import took 0.028121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/WoodenSwivelStoolBacked.dae
+  artifactKey: Guid(f0d5b74cf97ad1347ac0b47c22055c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/WoodenSwivelStoolBacked.dae using Guid(f0d5b74cf97ad1347ac0b47c22055c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d3343595defd43543a3f8ab0335b0b') in 0.072699 seconds
+  Import took 0.076285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/WoodenSeatBacked.dae
+  artifactKey: Guid(e5f6c578761bc4e41a03985bf01ba61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/WoodenSeatBacked.dae using Guid(e5f6c578761bc4e41a03985bf01ba61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677f4cf2e56720780e4e48add93ce376') in 0.023967 seconds
+  Import took 0.027548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/WoodenStoolBacked.dae
+  artifactKey: Guid(58029078ad80eac4993a755bab37f842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/WoodenStoolBacked.dae using Guid(58029078ad80eac4993a755bab37f842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778fc24751c7149d686978e9d58032a5') in 0.057113 seconds
+  Import took 0.060710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/OldSchoolBarstoolNoBack.dae
+  artifactKey: Guid(8bde7a2dfc7335041bcd7c5e2b0e257b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/OldSchoolBarstoolNoBack.dae using Guid(8bde7a2dfc7335041bcd7c5e2b0e257b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80d2b8da5c1801632c0e3fddda8f3bf') in 0.060293 seconds
+  Import took 0.064098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/OldSchoolBarstoolBacked.dae
+  artifactKey: Guid(1b743ccd38691d542850f73f43bef3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/OldSchoolBarstoolBacked.dae using Guid(1b743ccd38691d542850f73f43bef3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a936b083e567c5b4f3ddf08321c1e447') in 0.023475 seconds
+  Import took 0.027175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Models/Office/BarProps/Prefabs/OldSchoolBarstoolNoBack.dae
+  artifactKey: Guid(8bde7a2dfc7335041bcd7c5e2b0e257b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Office/BarProps/Prefabs/OldSchoolBarstoolNoBack.dae using Guid(8bde7a2dfc7335041bcd7c5e2b0e257b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80d2b8da5c1801632c0e3fddda8f3bf') in 0.024411 seconds
+  Import took 0.028027 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
