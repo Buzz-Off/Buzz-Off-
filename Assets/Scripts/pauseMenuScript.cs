@@ -48,4 +48,12 @@ public class pauseMenuScript : MonoBehaviour
         pauseMenu.SetActive(true);
         controlsMenu.SetActive(false);
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+        // for unity editor
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 }
