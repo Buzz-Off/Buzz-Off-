@@ -26,9 +26,9 @@ public class readyMode : MonoBehaviour
         {
             enemy.GetComponent<Animator>().SetBool("isReady", true);
 
-            Vector3 direction = other.gameObject.transform.position - enemy.transform.position;
+            /*Vector3 direction = other.gameObject.transform.position - enemy.transform.position;
             direction.y = 0;
-            enemy.transform.rotation = Quaternion.Slerp(enemy.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+            enemy.transform.rotation = Quaternion.Slerp(enemy.transform.rotation, Quaternion.LookRotation(direction), 0.1f);*/
 
             //Debug.Log("ready");
         }

@@ -16,6 +16,9 @@ public class playerMovement : MonoBehaviour
     public bool inWind = false;
     public GameObject windArea;
 
+    public bool inVent = false;
+    public GameObject ventArea;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -104,6 +107,12 @@ public class playerMovement : MonoBehaviour
         {
             rb.AddForce(Vector3.down * windArea.GetComponent<windForce>().strength);
         }
+
+        // ---VENT---
+        if (inVent)
+        {
+            rb.AddForce(Vector3.up * ventArea.GetComponent<ventForce>().strength);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -113,12 +122,22 @@ public class playerMovement : MonoBehaviour
             inWind = true;
             windArea = other.gameObject;
         }
+        if (other.gameObject.tag == "vent")
+        {
+            Debug.Log("in vent");
+            inVent = true;
+            ventArea = other.gameObject;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "wind")
         {
             inWind = false;
+        }
+        if (other.gameObject.tag == "vent")
+        {
+            inVent = false;
         }
     }
 }
