@@ -15,11 +15,11 @@ C:/Users/xwill/OneDrive/Documents/GitHub/Buzz-Off-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56330
+56724
 Successfully changed project path to: C:/Users/xwill/OneDrive/Documents/GitHub/Buzz-Off-
 C:/Users/xwill/OneDrive/Documents/GitHub/Buzz-Off-
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 40.06 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 40.03 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,60 +35,76 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Trying to register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll (that doesn't exist). Retrying without overrides.
 Platform support module is not available: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001716 seconds.
+Registered in 0.001770 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 39.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 39.55 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.908 seconds
+- Completed reload, in  0.882 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001144 seconds.
+Registered in 0.001215 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.359 seconds
+- Completed reload, in  1.266 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2059 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 101.8 MB.
 System memory in use after: 101.9 MB.
 
 Unloading 120 unused Assets to reduce memory usage. Loaded Objects now: 2493.
-Total: 3.208100 ms (FindLiveObjects: 0.441300 ms CreateObjectMapping: 0.050000 ms MarkObjects: 2.485500 ms  DeleteObjects: 0.229200 ms)
+Total: 3.000700 ms (FindLiveObjects: 0.351200 ms CreateObjectMapping: 0.064200 ms MarkObjects: 2.321900 ms  DeleteObjects: 0.261700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Menu Assets/level selector.png
-  artifactKey: Guid(945cab0c8a16ed64a965b9d7adda0e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Menu Assets/level selector.png using Guid(945cab0c8a16ed64a965b9d7adda0e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe784adf60331112eb0da54e68e27403') in 0.074519 seconds
-  Import took 0.078187 seconds .
+  path: Assets/Menu Assets/level1_image.JPG
+  artifactKey: Guid(37fa4e39fbf9ba8408fb14a6a0cd8ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu Assets/level1_image.JPG using Guid(37fa4e39fbf9ba8408fb14a6a0cd8ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f607f138d3d4794afca47d3303c4c1a') in 0.068416 seconds
+  Import took 0.071840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Menu Assets/level3_image.JPG
+  artifactKey: Guid(a31d17dfbd2ddfa458689fb648a9fdab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu Assets/level3_image.JPG using Guid(a31d17dfbd2ddfa458689fb648a9fdab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0949143d5cd2128772db952906b753bc') in 0.009758 seconds
+  Import took 0.012611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Menu Assets/level2_image.JPG
+  artifactKey: Guid(c0e64bb0089a1dd40ad1efdccc4d8eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu Assets/level2_image.JPG using Guid(c0e64bb0089a1dd40ad1efdccc4d8eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4ead37a8e7e85b7e281a59adab3652') in 0.011982 seconds
+  Import took 0.015338 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001465 seconds.
+Registered in 0.001437 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -103,61 +119,21 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.818 seconds
+- Completed reload, in  0.969 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2005 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 98.9 MB.
 System memory in use after: 99.0 MB.
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2498.
-Total: 2.417100 ms (FindLiveObjects: 0.297700 ms CreateObjectMapping: 0.043400 ms MarkObjects: 2.009400 ms  DeleteObjects: 0.065400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 635.841129 seconds.
-  path: Assets/Scenes/LoseMenu.unity
-  artifactKey: Guid(9af5669473b50834ca6afe6121fdc011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LoseMenu.unity using Guid(9af5669473b50834ca6afe6121fdc011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfec92aa804bc1fbe043fb88cb092c08') in 0.016997 seconds
-  Import took 0.021334 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.123638 seconds.
-  path: Assets/Scenes/WinMenu.unity
-  artifactKey: Guid(19e297015b0046b4f8e8674770ce11fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/WinMenu.unity using Guid(19e297015b0046b4f8e8674770ce11fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1ee0035ec91da529f67ca82a143017') in 0.008634 seconds
-  Import took 0.012042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.345747 seconds.
-  path: Assets/Scenes/LoseMenu 1.unity
-  artifactKey: Guid(6925935a295ac23498184d6ebdac34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LoseMenu 1.unity using Guid(6925935a295ac23498184d6ebdac34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63dbbea3db5d93a70b21d09bbd0e0bd7') in 0.006311 seconds
-  Import took 0.009694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.591085 seconds.
-  path: Assets/Scenes/LevelSelector.unity
-  artifactKey: Guid(0e19b3aaa9ae392419513580c68a7570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LevelSelector.unity using Guid(0e19b3aaa9ae392419513580c68a7570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4882f0fcd60c2565a8cfd4148402acf0') in 0.007659 seconds
-  Import took 0.011506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.000960 seconds.
-  path: Assets/Scenes/LoseMenu 2.unity
-  artifactKey: Guid(cae9e3d5e4cd2cf4fa54064697ff5dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LoseMenu 2.unity using Guid(cae9e3d5e4cd2cf4fa54064697ff5dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf91960269be3a0752ec817d6c928ff') in 0.007116 seconds
-  Import took 0.011401 seconds .
+Total: 3.485200 ms (FindLiveObjects: 0.578500 ms CreateObjectMapping: 0.072000 ms MarkObjects: 2.751200 ms  DeleteObjects: 0.081900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001577 seconds.
+Registered in 0.001429 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
@@ -175,47 +151,15 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.858 seconds
+- Completed reload, in  0.841 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2004 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.0 MB.
-System memory in use after: 99.1 MB.
+System memory in use before: 98.9 MB.
+System memory in use after: 99.0 MB.
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2500.
-Total: 2.551800 ms (FindLiveObjects: 0.309700 ms CreateObjectMapping: 0.046700 ms MarkObjects: 2.126200 ms  DeleteObjects: 0.067900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 387.232426 seconds.
-  path: Assets/Scenes/LoseMenu 2.unity
-  artifactKey: Guid(cae9e3d5e4cd2cf4fa54064697ff5dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LoseMenu 2.unity using Guid(cae9e3d5e4cd2cf4fa54064697ff5dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30afd671b36182bbc059aab828aa7ec') in 0.012550 seconds
-  Import took 0.016686 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 80.668109 seconds.
-  path: Assets/Scenes/LoseMenu 1.unity
-  artifactKey: Guid(6925935a295ac23498184d6ebdac34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LoseMenu 1.unity using Guid(6925935a295ac23498184d6ebdac34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31157d3e863ed1a79f79fd77d453bee4') in 0.002519 seconds
-  Import took 0.006015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000438 seconds.
-  path: Assets/Scenes/LoseMenu 1.unity
-  artifactKey: Guid(6925935a295ac23498184d6ebdac34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LoseMenu 1.unity using Guid(6925935a295ac23498184d6ebdac34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31157d3e863ed1a79f79fd77d453bee4') in 0.002303 seconds
-  Import took 0.005244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 120.344366 seconds.
-  path: Assets/Scenes/LevelSelector.unity
-  artifactKey: Guid(0e19b3aaa9ae392419513580c68a7570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LevelSelector.unity using Guid(0e19b3aaa9ae392419513580c68a7570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad8e7db3a8ae36ba9f1a6dcd03d07aa') in 0.002400 seconds
-  Import took 0.006352 seconds .
+Total: 2.500400 ms (FindLiveObjects: 0.265500 ms CreateObjectMapping: 0.045100 ms MarkObjects: 2.119400 ms  DeleteObjects: 0.069500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
