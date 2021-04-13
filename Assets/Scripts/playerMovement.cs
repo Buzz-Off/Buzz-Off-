@@ -5,6 +5,8 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
 
+
+
     public float x_force;
     public float y_force;
     public float z_force; 
