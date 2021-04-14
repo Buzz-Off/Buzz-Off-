@@ -1952,7 +1952,7 @@ GameObject:
   - component: {fileID: 6400296785626367535}
   m_Layer: 0
   m_Name: Human1
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2043,7 +2043,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fly: {fileID: 0}
-  lookDistance: 50
+  speed: 0
+  timer: 0
+  waypoints: []
 --- !u!114 &6400296785626367534
 MonoBehaviour:
   m_ObjectHideFlags: 0
