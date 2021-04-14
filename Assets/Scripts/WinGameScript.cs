@@ -8,12 +8,12 @@ public class WinGameScript : MonoBehaviour
     public void PlayAgain()
     {
         Debug.Log("HELLO");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void LevelSelector()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 6);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
     }
 
     // This will quit the game after when we export/build it.
