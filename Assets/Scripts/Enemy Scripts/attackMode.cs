@@ -17,12 +17,15 @@ public class attackMode : MonoBehaviour
     public float closeDelay;
     public float openDelay;
 
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         LHand.GetComponent<TwoBoneIKConstraint>().weight = 0;
         RHand.GetComponent<TwoBoneIKConstraint>().weight = 0;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -65,6 +68,7 @@ public class attackMode : MonoBehaviour
         {
             if (attackInwards)
             {
+               //audioSource.PlayOneShot(audioSource.clip);
                 attackClose();
             }
             if (!attackInwards)

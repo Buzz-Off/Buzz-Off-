@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 public class BoxEnemyController : MonoBehaviour
 {
-    public GameObject fly;
+    /*public GameObject fly;
     public float speed;
     public float timer;
-    private bool isChasing;
+    private bool isChasing;*/
 
     public Transform[] waypoints;
     int currentWaypointID = 0;
@@ -17,7 +17,7 @@ public class BoxEnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isChasing = false;
+        //isChasing = false;
         navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
         navMeshAgent.SetDestination(waypoints[currentWaypointID].position);
     }
@@ -32,7 +32,7 @@ public class BoxEnemyController : MonoBehaviour
 
         }
 
-        if (isChasing)
+        /*if (isChasing)
         {
             gameObject.GetComponent<NavMeshAgent>().enabled = false;
 
@@ -51,17 +51,17 @@ public class BoxEnemyController : MonoBehaviour
         else
         {
             gameObject.GetComponent<NavMeshAgent>().enabled = true;
-        }
+        }*/
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             isChasing = true;
             Debug.Log(isChasing);
         }
-    }
+    }*/
 
 
 
