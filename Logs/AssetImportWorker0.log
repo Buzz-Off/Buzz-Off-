@@ -15,11 +15,11 @@ C:/Users/darks/Buzz Off!
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51616
+51768
 Successfully changed project path to: C:/Users/darks/Buzz Off!
 C:/Users/darks/Buzz Off!
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.86 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 56.08 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,24 +35,24 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002911 seconds.
+Registered in 0.002924 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 52.65 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 54.06 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.431 seconds
+- Completed reload, in  1.461 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010380 seconds.
+Registered in 0.010515 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -62,65 +62,58 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.135 seconds
+- Completed reload, in  1.839 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2092 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 103.3 MB.
 System memory in use after: 103.3 MB.
 
 Unloading 148 unused Assets to reduce memory usage. Loaded Objects now: 2534.
-Total: 3.396300 ms (FindLiveObjects: 0.268700 ms CreateObjectMapping: 0.064600 ms MarkObjects: 2.757700 ms  DeleteObjects: 0.304200 ms)
+Total: 3.250600 ms (FindLiveObjects: 0.270900 ms CreateObjectMapping: 0.078900 ms MarkObjects: 2.590700 ms  DeleteObjects: 0.308800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Alpha1/NavMesh.asset
-  artifactKey: Guid(95f2ea91ce647a34fac3a1ffa3d87221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Alpha1/NavMesh.asset using Guid(95f2ea91ce647a34fac3a1ffa3d87221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc89d3161c1e71f03666d0b4af5f09c1') in 0.049466 seconds
-  Import took 0.077110 seconds .
+  path: Assets/Scenes/LoseMenu.unity
+  artifactKey: Guid(9af5669473b50834ca6afe6121fdc011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LoseMenu.unity using Guid(9af5669473b50834ca6afe6121fdc011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e49046891a2f4488ca7438ef8f3c7a') in 0.012338 seconds
+  Import took 0.057457 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Scenes/Alpha1
-  artifactKey: Guid(af263d2799c8afc4d900b9afaa1809f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Alpha1 using Guid(af263d2799c8afc4d900b9afaa1809f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352c793528539c1d5275141ad4be490c') in 0.028476 seconds
-  Import took 0.031591 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009957 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Prefab/SoundController.prefab
-  artifactKey: Guid(8dbb893d7995fd54d8af2c30aa41bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/SoundController.prefab using Guid(8dbb893d7995fd54d8af2c30aa41bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5f14921f7259cf1e0cfd4112830860') in 0.587716 seconds
-  Import took 0.601853 seconds .
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
 
-========================================================================
-Received Import Request.
-  Time since last request: 2.533468 seconds.
-  path: Assets/Scenes/Alpha1.unity
-  artifactKey: Guid(71619cca3eb02144f8311ae0059a2db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Alpha1.unity using Guid(71619cca3eb02144f8311ae0059a2db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e4d1ada78ede5f2d137836c1e143fe') in 0.007433 seconds
-  Import took 0.192657 seconds .
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.215 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2028 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.0 MB.
+System memory in use after: 99.1 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 535.129552 seconds.
-  path: Assets/Macros/buttonSound.asset
-  artifactKey: Guid(c9ade066af2d378429bdd1d15510148b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Macros/buttonSound.asset using Guid(c9ade066af2d378429bdd1d15510148b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f2e2b759475cf901fe9a1a2e99ef79') in 0.013134 seconds
-  Import took 0.030529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Macros/hitSound.asset
-  artifactKey: Guid(9e373275da449ac468912c7d72e68b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Macros/hitSound.asset using Guid(9e373275da449ac468912c7d72e68b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee3aa9fb9190682eb79fcdff0498231') in 0.009286 seconds
-  Import took 0.020162 seconds .
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2537.
+Total: 2.896400 ms (FindLiveObjects: 0.223300 ms CreateObjectMapping: 0.055300 ms MarkObjects: 2.509900 ms  DeleteObjects: 0.106500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
